@@ -4,27 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd89d1efee.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--        MENU HEADER     -->
-    <div class="container-header">
-        <header>
-        <div class="logo">
-        <a href="">Alejandro Martín Auden</a>
+    <div id="header">
+        <div class="container">
+            
+            <nav id="nav">
+                <img src="sources/logo_example.jpeg" class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hi, my name is<br><span>Alejandro Martín</span>!</h1>
+            </div>
         </div>
-        <nav id="nav">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#aboutme">ABOUT ME</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#curriculum">CURRICULUM</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        </header>
     </div>
+<!-----------------------About Section--------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sources/conf.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>•I’m a computer science student<br>
+                        •Enthusiastic about international environments, 
+                        learning languages and experiencing
+                        cultures<br>
+                        •One exam away from completing a 4-year
+                        degree in engineering<br>
+                        •Living in Brno since September<br>
+                        •Author of two novels and one article<br>
+                        •I gave local presentations and talks, and I
+                        have experience in speaking in front of an
+                        audience<br>
+                        •Chess teacher in a public school<br>
+                        •Private lecturer in maths, physics and programming</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div>
+                        <div class="tab-contents active" id="skills">
+                            <ul>
+                                <li><span>Java</span><br>Python</li>
+                                <li><span>SQL</span><br>C#</li>
+                                <li><span>Backend</span><br>Web development</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Software Developer</span><br>Orchestra, The Leisure Platform</li>
+                                <li><span>Database and IT Assistant</span><br>Ayesa Advanced Technologies S.A.</li>
+                                <li><span>Teacher</span><br>Self employed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Informatics Engineering</span><br>Universidad de Sevilla</li>
+                                <li><span>Exchange program</span><br>HTWG Konstanz</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active")
+        }
+        event.currentTarget.classList.add("active")
+        document.getElementById(tabname).classList.add("active")
+    }
+
+</script>
+
 
 </body>
 </html>
