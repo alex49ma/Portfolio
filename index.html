@@ -13,18 +13,20 @@
         <div class="container">
             
             <nav id="nav">
-                <img src="sources/logo_example.jpeg" class="logo">
-                <ul>
+                <!--img src="sources/logo_example.jpeg" class="logo"-->
+                <ul id="sideMenu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software developer</p>
                 <h1>Hi, my name is<br><span>Alejandro Martín</span>!</h1>
+                <p>Software developer</p>
             </div>
         </div>
     </div>
@@ -34,27 +36,27 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="sources/conf.jpeg">
+                    <img src="sources/confident.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>•I’m a computer science student<br>
+                    <p><br>•I’m a computer science student<br><br>
                         •Enthusiastic about international environments, 
                         learning languages and experiencing
-                        cultures<br>
+                        cultures<br><br>
                         •One exam away from completing a 4-year
-                        degree in engineering<br>
-                        •Living in Brno since September<br>
-                        •Author of two novels and one article<br>
+                        degree in engineering<br><br>
+                        •Living in Brno since September<br><br>
+                        •Author of two novels and one article<br><br>
                         •I gave local presentations and talks, and I
                         have experience in speaking in front of an
-                        audience<br>
-                        •Chess teacher in a public school<br>
-                        •Private lecturer in maths, physics and programming</p>
+                        audience<br><br>
+                        •Chess teacher in a public school<br><br>
+                        •Private lecturer in maths, physics and programming</p><br>
 
                     <div class="tab-titles">
                         <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
 
                     </div>
@@ -62,19 +64,30 @@
                     <div>
                         <div class="tab-contents active" id="skills">
                             <ul>
-                                <li><span>Java</span><br>Python</li>
-                                <li><span>SQL</span><br>C#</li>
-                                <li><span>Backend</span><br>Web development</li>
+                                <div class="skills">
+                                    <div class="skill-col1">
+                                        <li><span>Java</span><br>Python</li>
+                                        <li><span>SQL</span><br>C#</li>
+                                        <li><span>Bash</span><br>C++</li>
+                                        <li><span>CSS</span><br>HTML</li>
+                                    </div>
+                                    <div class="skill-col2">
+                                        <li><span>REST</span><br>R</li>
+                                        <li><span>NoSQL</span><br>Maven</li>
+                                        <li><span>Vert.x</span><br>PyTorch</li>
+                                        <li><span>Backend</span><br>Web development</li>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
                     </div>
 
                     <div>
-                        <div class="tab-contents" id="experience">
+                        <div class="tab-contents" id="hobbies">
                             <ul>
-                                <li><span>Software Developer</span><br>Orchestra, The Leisure Platform</li>
-                                <li><span>Database and IT Assistant</span><br>Ayesa Advanced Technologies S.A.</li>
-                                <li><span>Teacher</span><br>Self employed</li>
+                                <li><span>Chess</span><br>Since I was a kid, chess has been an important part of my life and nowadays I keep playing frequently.</li>
+                                <li><span>Reading and Writting</span><br>I have always had a very active imagination, writting a lot of stories in the past. Now I try to keep some time for that as well</li>
+                                <li><span>Team sports</span><br>I do not excel in any particular sport but I have practiced many of them. Team sports are usually my favorites.</li>
                             </ul>
                         </div>
                     </div>
@@ -97,25 +110,28 @@
 
 <div id="services">
     <div class="container">
-        <h1 class="subtitle">My Services</h1>
+        <h1 class="subtitle">My Experience</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
-                <h2>Web Programming</h2>
-                <p>Describe your service</p>
-                <a href="#">Learn more</a>
+                <h2>Software Engineer</h2>
+                <p>Project in a prestigious software company in the leisure field in France. Java backend programming, API development. Full software cycle</p>
+                <p><br>Collecting and addressing technical requirements, while maintaining effective communication with clients.</p>
+                <a href="https://www.orchestra.eu/en/">About this company</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database and IT Assistant</h2>
+                <p>Conception and implementation of novel mechanisms to streamline the access, manipulation, and visualization of data.</p>
+                <p><br>Daily execution of data processing, ensuring its integrity, accuracy, and optimal functionality.</p>
+                <a href="https://www.ayesa.com/">About this company</a>
             </div>
             <div>
                 <i class="fa-solid fa-chalkboard-user"></i>
-                <h2>Teaching</h2>
-                <p>Describe your service</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h2>API Development</h2>
-                <p>Describe your service</p>
-                <a href="#">Learn more</a>
+                <h2>Teacher</h2>
+                <p>Private teacher specialiced in maths, physics and programming for middle and high school students.</p>
+                <p><br>Chess monitor in a public school during the year 2023</p>
+                <a href="https://www.juntadeandalucia.es/averroes/centros-tic/21003426/helvia/sitio/">About this company</a>
             </div>
         </div>
     </div>
@@ -131,7 +147,7 @@
                 <img src="sources/qChess_logo.ico">
                 <div class="layer">
                     <h3>Quantum Chess</h3>
-                    <p>Description</p>
+                    <p>The chess variant known as Quantum Chess. It allows the users to play embracing some of the principles of Quantum Mechanics.</p>
                     <a href="https://github.com/alex49ma/QuantumChess"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
@@ -157,6 +173,41 @@
 
 </div>
 
+<!-----------------------Contact Section--------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> amartinauden@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +420 736 420 918</p>
+                <p><i class="fa-solid fa-phone"></i> +34 643 49 97 86</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/alejandro-martin-auden-50384219b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/alex49ma"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="sources/CV_Alejandro_M.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="217625e6-5b88-4c11-a1d4-5ea1905e6ca3">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" id="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Alejandro Martín Auden</p>
+    </div>
+
+</div>
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links")
@@ -174,7 +225,19 @@
     }
 
 </script>
+<script>
 
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0px"
+    }
+
+    function closeMenu(){
+        sideMenu.style.right = "-200px"
+    }
+
+</script>
 
 </body>
 </html>
