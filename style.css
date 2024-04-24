@@ -4,6 +4,17 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+/*
+Color palette:
+#45dad2     turquoise
+#00a199     dark turquoise
+#080808     "black"
+#ff004f     red
+#ababab     grey
+#b54769     pink-magenta
+*/
+
 html{
     scroll-behavior: smooth;
 }
@@ -24,9 +35,17 @@ body{
     padding: 10px 10%;
 }
 
-.logo{
-    height: 140px;
-    width: 140px;
+.profpic img{
+    width: 20%;
+    clip-path: circle();
+    object-fit: contain;
+    /*
+    border-radius: 50%;
+    object-position: 50% 50%;
+    height: auto;
+    display: block;
+    */
+
 }
 
 nav{
@@ -53,7 +72,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff004f;
+    background: #45dad2;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -65,7 +84,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 16%;
     font-size: 30px;
 }
 
@@ -75,7 +94,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: #45dad2;
 }
 
 /* ---------------------About Section-------------------*/
@@ -107,11 +126,11 @@ nav ul li a:hover::after{
 }
 
 .skill-col1{
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 .skill-col2{
-    flex-basis: 50%;
+    flex-basis: 70%;
 }
 
 .about-col-2{
@@ -141,7 +160,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #45dad2;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -149,7 +168,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -159,7 +178,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
+    color: #00a199;
     font-size: 14px;
 
 }
@@ -172,7 +191,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* ---------------------Services Section-------------------*/
+/* ---------------------Experience Section-------------------*/
 
 #services{
     padding: 30px 0;
@@ -215,7 +234,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #45dad2;
     transform: translateY(-10px);
 }
 
@@ -246,10 +265,14 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 
+.tech{
+    font-size: 50px;
+}
+
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #45dad2);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -271,7 +294,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color:#ff004f;
+    color:#45dad2;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -294,7 +317,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #45dad2;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -303,7 +326,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #45dad2;
 }
 
 /* ---------------------Contact Section-------------------*/
@@ -321,7 +344,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #45dad2;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -340,13 +363,13 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: #ff004f;
+    color: #45dad2;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #45dad2;
 }
 
 .contact-right form{
@@ -383,7 +406,7 @@ form .btn2{
 }
 
 .copyright i{
-    color: #ff004f;
+    color: #45dad2;
 }
 
 
@@ -395,21 +418,30 @@ nav .fa-solid{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(sources/bg.jpeg);
+        background-image: url(sources/background.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 60%;
         font-size: 16px;        
     }
     .header-text h1{
         font-size: 30px;
     }
+
+    .profpic img{
+        width: 30%;
+    }
+
     nav .fa-solid{
         display: block;
+        position: fixed;
+        right: 50px;
+        top: 25px;
         font-size: 25px;
+        z-index: 1;
     }
     nav ul{
-        background: #ff004f;
+        background: #00a199;
         position: fixed;
         top: 0;
         right: -200px;
