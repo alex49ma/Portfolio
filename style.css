@@ -179,8 +179,14 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #00a199;
-    font-size: 14px;
+    font-size: 20px;
 
+}
+
+.period {
+  font-style: italic;
+  color: #666;
+  margin-left: 8px;
 }
 
 .tab-contents{
