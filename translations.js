@@ -1,0 +1,160 @@
+const translations = {
+    en: {
+        nav: {
+            home: "Home",
+            about: "About Me",
+            experience: "Experience",
+            projects: "Projects",
+            contact: "Contact"
+        },
+        header: {
+            hi: "Hi, my name is",
+            name: "Alejandro Martín!",
+            role: "Software developer"
+        },
+        about: {
+            title: "About Me",
+            bullet1: "• I'm a Spanish software developer living in Brno",
+            bullet2: "• Enthusiastic about international environments, learning languages and experiencing cultures",
+            bullet3: "• Curious learner: Interested in physics, AI and finance",
+            bullet4: "• Studying a Master's degree in Quantum Computing",
+            bullet5: "• Author of two novels and one article",
+            bullet6: "• Chess enthusiast, I ran a chess workshop at a public school",
+            bullet7: "• Private lecturer in maths, physics and programming",
+            skills: "Skills",
+            hobbies: "Hobbies",
+            education: "Education",
+            hobby1_title: "Chess",
+            hobby1_desc: "Since I was a kid, chess has been an important part of my life and nowadays I keep playing frequently.",
+            hobby2_title: "Reading and Writing",
+            hobby2_desc: "I have always had a very active imagination, writing a lot of stories in the past. Now I try to keep some time for that as well",
+            hobby3_title: "Team sports",
+            hobby3_desc: "I do not excel in any particular sport but I have practiced many of them. Team sports are usually my favorites.",
+            edu1_title: "Master's degree in Quantum Computing",
+            edu1_period: "Present - Universidad Internacional de la Rioja",
+            edu1_desc: "Coursework: Quantum Mechanics, Mathematics applied to Information Theory, Quantum Algorithms",
+            edu2_title: "Exchange program: Computer Science",
+            edu2_period: "2022-2023 - HTWG Konstanz",
+            edu2_desc: "Coursework: Ubiquitous Computing, Mobile Computing, Embedded Systems",
+            edu3_title: "Bachelor's degree in Computer Engineering",
+            edu3_period: "2019-2024 - Universidad de Sevilla",
+            edu3_desc: "Coursework: Computer Architecture, Software Architecture, Distributed systems"
+        },
+        experience: {
+            title: "My Experience",
+            role1_title: "Asociate Analyst Developer",
+            role1_desc1: "Full-time role as a developer in one of the market-leading FinTechs.",
+            role1_desc2: "Analysis, implementation and maintenance of new functionalities.",
+            role1_desc3: "Worked within an Agile environment, collaborating in sprints and delivering incremental results.",
+            role1_desc4: "Optimized database performance, cutting generation time by up to 50% for selected reports and critical processes",
+            company_link: "About this company",
+            role2_title: "Technology Solutions Graduate",
+            role2_desc1: "Part of a full immersion program in different roles. Among other responsibilities, can be highlighted:",
+            role2_desc2: "• Diagnosed and resolved software inconsistencies, ensuring system reliability and performance.",
+            role2_desc3: "• Collaborated with cross-functional teams to identify and implement solutions for system improvements.",
+            role2_desc4: "• Analyzing business requirements to develop and design use cases that align with user needs and project goals.",
+            role3_title: "Database and IT Assistant",
+            role3_desc1: "Conception and implementation of novel mechanisms to streamline the access, manipulation, and visualization of data.",
+            role3_desc2: "Daily execution of data processing, ensuring its integrity, accuracy, and optimal functionality.",
+            role3_desc3: "Automatization of daily repetitive tasks, saving up to 1h of work every day."
+        },
+        projects: {
+            title: "My Projects",
+            trakeo_desc: "Scalable full-stack finance platform, implementing secure authentication and event-driven background processing for reliable transaction handling. Available as a functional prototype for demonstration and testing.",
+            tech_label: "Technologies: ",
+            source_label: "Source code: ",
+            live_label: "Live deployment (open testing): ",
+            qchess_desc: "The chess variant known as Quantum Chess. It allows the users to play embracing some of the principles of Quantum Mechanics.",
+            trashbase_desc: "A distributed system designed to manage the containers in a community. This application allows the manager to block full containers and register activity",
+            see_more: "See more"
+        },
+        contact: {
+            title: "Contact Me",
+            download_cv: "Download CV",
+            name_placeholder: "Your name",
+            email_placeholder: "Your email",
+            message_placeholder: "Your Message",
+            submit: "Submit",
+            copyright: "Copyright"
+        }
+    },
+    es: {
+        nav: {
+            home: "Inicio",
+            about: "Sobre mí",
+            experience: "Experiencia",
+            projects: "Proyectos",
+            contact: "Contacto"
+        },
+        header: {
+            hi: "Hola, me llamo",
+            name: "Alejandro Martín!",
+            role: "Desarrollador de software"
+        },
+        about: {
+            title: "Sobre mí",
+            bullet1: "• Soy un desarrollador de software español viviendo en Brno",
+            bullet2: "• Entusiasta de los entornos internacionales, aprender idiomas y experimentar culturas",
+            bullet3: "• Curioso: Interesado en física, IA y finanzas",
+            bullet4: "• Estudiando un Máster en Computación Cuántica",
+            bullet5: "• Autor de dos novelas y un artículo",
+            bullet6: "• Entusiasta del ajedrez, dirigí un taller de ajedrez en un colegio público",
+            bullet7: "• Profesor particular de matemáticas, física y programación",
+            skills: "Habilidades",
+            hobbies: "Aficiones",
+            education: "Educación",
+            hobby1_title: "Ajedrez",
+            hobby1_desc: "Desde que era niño, el ajedrez ha sido una parte importante de mi vida y hoy en día sigo jugando con frecuencia.",
+            hobby2_title: "Escribir y Leer",
+            hobby2_desc: "Siempre he tenido una imaginación muy activa, escribiendo muchas historias en el pasado. Ahora intento sacar tiempo para ello también.",
+            hobby3_title: "Deportes de equipo",
+            hobby3_desc: "No destaco en ningún deporte en particular pero he practicado muchos. Los deportes de equipo suelen ser mis favoritos.",
+            edu1_title: "Máster en Computación Cuántica",
+            edu1_period: "Actualidad - Universidad Internacional de la Rioja",
+            edu1_desc: "Cursos: Mecánica Cuántica, Matemáticas aplicadas a la Teoría de la Información, Algoritmos Cuánticos",
+            edu2_title: "Programa de intercambio: Ciencias de la Computación",
+            edu2_period: "2022-2023 - HTWG Konstanz",
+            edu2_desc: "Cursos: Computación Ubicua, Computación Móvil, Sistemas Embebidos",
+            edu3_title: "Grado en Ingeniería Informática",
+            edu3_period: "2019-2024 - Universidad de Sevilla",
+            edu3_desc: "Cursos: Arquitectura de Computadores, Arquitectura de Software, Sistemas Distribuidos"
+        },
+        experience: {
+            title: "Mi Experiencia",
+            role1_title: "Desarrollador Analista Asociado",
+            role1_desc1: "Rol a tiempo completo como desarrollador en una de las FinTech líderes del mercado.",
+            role1_desc2: "Análisis, implementación y mantenimiento de nuevas funcionalidades.",
+            role1_desc3: "Trabajo en un entorno Agile, colaborando en sprints y entregando resultados incrementales.",
+            role1_desc4: "Optimización del rendimiento de la base de datos, reduciendo el tiempo de generación hasta un 50% para informes y procesos críticos",
+            company_link: "Sobre esta empresa",
+            role2_title: "Graduado en Soluciones Tecnológicas",
+            role2_desc1: "Parte de un programa de inmersión total en diferentes roles. Entre otras responsabilidades, destacan:",
+            role2_desc2: "• Diagnóstico y resolución de inconsistencias de software, asegurando la fiabilidad y el rendimiento del sistema.",
+            role2_desc3: "• Colaboración con equipos transversales para identificar e implementar soluciones de mejora del sistema.",
+            role2_desc4: "• Análisis de requisitos de negocio para desarrollar y diseñar casos de uso alineados con las necesidades de los usuarios y los objetivos del proyecto.",
+            role3_title: "Asistente de Base de Datos y TI",
+            role3_desc1: "Concepción e implementación de mecanismos novedosos para agilizar el acceso, manipulación y visualización de datos.",
+            role3_desc2: "Ejecución diaria del procesamiento de datos, asegurando su integridad, precisión y funcionalidad óptima.",
+            role3_desc3: "Automatización de tareas repetitivas diarias, ahorrando hasta 1h de trabajo cada día."
+        },
+        projects: {
+            title: "Mis Proyectos",
+            trakeo_desc: "Plataforma financiera full-stack escalable, implementando autenticación segura y procesamiento en segundo plano basado en eventos para un manejo fiable de transacciones. Disponible como prototipo funcional para demostración y pruebas.",
+            tech_label: "Tecnologías: ",
+            source_label: "Código fuente: ",
+            live_label: "Despliegue (pruebas abiertas): ",
+            qchess_desc: "La variante de ajedrez conocida como Ajedrez Cuántico. Permite a los usuarios jugar adoptando algunos de los principios de la Mecánica Cuántica.",
+            trashbase_desc: "Un sistema distribuido diseñado para gestionar los contenedores en una comunidad. Esta aplicación permite al gestor bloquear contenedores llenos y registrar la actividad.",
+            see_more: "Ver más"
+        },
+        contact: {
+            title: "Contacto",
+            download_cv: "Descargar CV",
+            name_placeholder: "Tu nombre",
+            email_placeholder: "Tu email",
+            message_placeholder: "Tu Mensaje",
+            submit: "Enviar",
+            copyright: "Copyright"
+        }
+    }
+};

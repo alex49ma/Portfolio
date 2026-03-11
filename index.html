@@ -8,6 +8,8 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bd89d1efee.js" crossorigin="anonymous"></script>
+    <script src="translations.js"></script>
+    <script src="languageSwitcher.js"></script>
 </head>
 
 <body>
@@ -17,11 +19,17 @@
             <nav id="nav">
                 <!--img src="sources/logo_example.jpeg" class="logo"-->
                 <ul id="sideMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About Me</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <div class="lang-switcher">
+                            <span onclick="languageSwitcher.setLanguage('en')">EN</span> |
+                            <span onclick="languageSwitcher.setLanguage('es')">ES</span>
+                        </div>
+                    </li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -30,8 +38,10 @@
                 <div class="profpic">
                     <img src="sources/foto personal.jpg">
                 </div>
-                <h1>Hi, my name is<br><span>Alejandro Martín</span>!</h1>
-                <p>Software developer</p>
+                <h1>
+                    <p data-i18n="header.hi">Hi, my name is</p><span>Alejandro Martín!</span>
+                </h1>
+                <p data-i18n="header.role">Software developer</p>
             </div>
         </div>
     </div>
@@ -44,22 +54,21 @@
                     <img src="sources/confident.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p><br>• I'm a Spanish software developer living in
-                        Brno<br><br>
-                        • Enthusiastic about international environments,
-                        learning languages and experiencing
-                        cultures<br><br>
-                        • Curious learner: Interested in physics, AI and finance<br><br>
-                        • Studying a Master's degree in Quantum Computing<br><br>
-                        • Author of two novels and one article<br><br>
-                        • Chess enthusiast, I ran a chess workshop at a public school<br><br>
-                        • Private lecturer in maths, physics and programming</p><br>
+                    <h1 class="subtitle" data-i18n="about.title">About Me</h1>
+                    <p><br><span data-i18n="about.bullet1">• I'm a Spanish software developer living in Brno</span><br><br>
+                        <span data-i18n="about.bullet2">• Enthusiastic about international environments, learning languages and experiencing
+                            cultures</span><br><br>
+                        <span data-i18n="about.bullet3">• Curious learner: Interested in physics, AI and finance</span><br><br>
+                        <span data-i18n="about.bullet4">• Studying a Master's degree in Quantum Computing</span><br><br>
+                        <span data-i18n="about.bullet5">• Author of two novels and one article</span><br><br>
+                        <span data-i18n="about.bullet6">• Chess enthusiast, I ran a chess workshop at a public school</span><br><br>
+                        <span data-i18n="about.bullet7">• Private lecturer in maths, physics and programming</span>
+                    </p><br>
 
                     <div class="tab-titles">
-                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active" onclick="opentab('skills')" data-i18n="about.skills">Skills</p>
+                        <p class="tab-links" onclick="opentab('hobbies')" data-i18n="about.hobbies">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('education')" data-i18n="about.education">Education</p>
 
                     </div>
 
@@ -95,13 +104,19 @@
                     <div>
                         <div class="tab-contents" id="hobbies">
                             <ul>
-                                <li><span>Chess</span><br>Since I was a kid, chess has been an important part of my life
-                                    and nowadays I keep playing frequently.</li>
-                                <li><span>Reading and Writting</span><br>I have always had a very active imagination,
-                                    writting a lot of stories in the past. Now I try to keep some time for that as well
+                                <li><span data-i18n="about.hobby1_title">Chess</span><br>
+                                    <p data-i18n="about.hobby1_desc">Since I was a kid, chess
+                                        has been an important part of my life and nowadays I keep playing frequently.</p>
                                 </li>
-                                <li><span>Team sports</span><br>I do not excel in any particular sport but I have
-                                    practiced many of them. Team sports are usually my favorites.</li>
+                                <li><span data-i18n="about.hobby2_title">Reading and Writting</span><br>
+                                    <p data-i18n="about.hobby2_desc">I have
+                                        always had a very active imagination, writting a lot of stories in the past. Now I try to keep some time for
+                                        that as well</p>
+                                </li>
+                                <li><span data-i18n="about.hobby3_title">Team sports</span><br>
+                                    <p data-i18n="about.hobby3_desc">I do not excel in any
+                                        particular sport but I have practiced many of them. Team sports are usually my favorites.</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -109,23 +124,23 @@
                     <div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>Master's degree in Quantum Computing</span>
-                                    <p class="period">Present - Universidad Internacional de la Rioja</p>
+                                <li><span data-i18n="about.edu1_title">Master's degree in Quantum Computing</span>
+                                    <p class="period" data-i18n="about.edu1_period">Present - Universidad Internacional de la Rioja</p>
                                 <li>
-                                    <p>Coursework: Quantum Mechanics, Mathematics applied to Information Theory, Quantum
+                                    <p data-i18n="about.edu1_desc">Coursework: Quantum Mechanics, Mathematics applied to Information Theory, Quantum
                                         Algorithms</p>
                                 </li>
                                 </li>
-                                <li><span>Exchange program: Computer Science</span>
-                                    <p class="period">2022-2023 - HTWG Konstanz</p>
+                                <li><span data-i18n="about.edu2_title">Exchange program: Computer Science</span>
+                                    <p class="period" data-i18n="about.edu2_period">2022-2023 - HTWG Konstanz</p>
                                 <li>
-                                    <p>Coursework: Ubiquitous Computing, Mobile Computing, Embedded Systems</p>
+                                    <p data-i18n="about.edu2_desc">Coursework: Ubiquitous Computing, Mobile Computing, Embedded Systems</p>
                                 </li>
                                 </li>
-                                <li><span>Bachelor's degree in Computer Engineering</span>
-                                    <p class="period">2019-2024 - Universidad de Sevilla</p>
+                                <li><span data-i18n="about.edu3_title">Bachelor's degree in Computer Engineering</span>
+                                    <p class="period" data-i18n="about.edu3_period">2019-2024 - Universidad de Sevilla</p>
                                 <li>
-                                    <p>Coursework: Computer Architecture, Software Architecture, Distributed systems</p>
+                                    <p data-i18n="about.edu3_desc">Coursework: Computer Architecture, Software Architecture, Distributed systems</p>
                                 </li>
                                 </li>
                             </ul>
@@ -141,31 +156,32 @@
 
     <div id="experience">
         <div class="container">
-            <h1 class="subtitle">My Experience</h1>
+            <h1 class="subtitle" data-i18n="experience.title">My Experience</h1>
             <div class="experience-list">
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Asociate Analyst Developer</h2>
-                    <p>Full-time role as a developer in one of the market-leading FinTechs.</p>
-                    <p><br>Analysis, implementation and maintenance of new functionalities.</p>
-                    <p><br>Worked within an Agile environment, collaborating in sprints and delivering incremental
-                        results.</p>
-                    <p><br>Optimized database performance, cutting generation time by up to 50% for selected reports and
-                        critical processes</p>
-                    <a href="https://www.fnz.com">About this company</a>
+                    <h2 data-i18n="experience.role1_title">Asociate Analyst Developer</h2>
+                    <p data-i18n="experience.role1_desc1">Full-time role as a developer in one of the market-leading FinTechs.</p>
+                    <p><br><span data-i18n="experience.role1_desc2">Analysis, implementation and maintenance of new functionalities.</span>
+                    </p>
+                    <p><br><span data-i18n="experience.role1_desc3">Worked within an Agile environment, collaborating in sprints and
+                            delivering incremental results.</span></p>
+                    <p><br><span data-i18n="experience.role1_desc4">Optimized database performance, cutting generation time by up to 50% for
+                            selected reports and critical processes</span></p>
+                    <a href="https://www.fnz.com" data-i18n="experience.company_link">About this company</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Technology Solutions Graduate</h2>
-                    <p>Part of a full immersion program in different roles. Among other responsibilities, can be
-                        highlighted:</p>
-                    <p><br>• Diagnosed and resolved software inconsistencies, ensuring system reliability and
-                        performance.</p>
-                    <p><br>• Collaborated with cross-functional teams to identify and implement solutions for system
-                        improvements.</p>
-                    <p><br>• Analyzing business requirements to develop and design use cases that align with user needs
-                        and project goals.</p>
-                    <a href="https://www.fnz.com">About this company</a>
+                    <h2 data-i18n="experience.role2_title">Technology Solutions Graduate</h2>
+                    <p data-i18n="experience.role2_desc1">Part of a full immersion program in different roles. Among other responsibilities,
+                        can be highlighted:</p>
+                    <p><br><span data-i18n="experience.role2_desc2">• Diagnosed and resolved software inconsistencies, ensuring system
+                            reliability and performance.</span></p>
+                    <p><br><span data-i18n="experience.role2_desc3">• Collaborated with cross-functional teams to identify and implement
+                            solutions for system improvements.</span></p>
+                    <p><br><span data-i18n="experience.role2_desc4">• Analyzing business requirements to develop and design use cases that
+                            align with user needs and project goals.</span></p>
+                    <a href="https://www.fnz.com" data-i18n="experience.company_link">About this company</a>
                 </div>
                 <!--div>
                     <i class="fa-solid fa-laptop-code"></i>
@@ -178,13 +194,14 @@
                 </div-->
                 <div>
                     <i class="fa-solid fa-database"></i>
-                    <h2>Database and IT Assistant</h2>
-                    <p>Conception and implementation of novel mechanisms to streamline the access, manipulation, and
-                        visualization of data.</p>
-                    <p><br>Daily execution of data processing, ensuring its integrity, accuracy, and optimal
-                        functionality.</p>
-                    <p><br>Automatization of daily repetitive tasks, saving up to 1h of work every day.</p>
-                    <a href="https://www.ayesa.com/">About this company</a>
+                    <h2 data-i18n="experience.role3_title">Database and IT Assistant</h2>
+                    <p data-i18n="experience.role3_desc1">Conception and implementation of novel mechanisms to streamline the access,
+                        manipulation, and visualization of data.</p>
+                    <p><br><span data-i18n="experience.role3_desc2">Daily execution of data processing, ensuring its integrity, accuracy,
+                            and optimal functionality.</span></p>
+                    <p><br><span data-i18n="experience.role3_desc3">Automatization of daily repetitive tasks, saving up to 1h of work every
+                            day.</span></p>
+                    <a href="https://www.ayesa.com/" data-i18n="experience.company_link">About this company</a>
                 </div>
             </div>
         </div>
@@ -194,16 +211,16 @@
 
     <div id="projects">
         <div class="container">
-            <h1 class="subtitle">My Projects</h1>
+            <h1 class="subtitle" data-i18n="projects.title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="sources/logo.png">
                     <div class="layer">
                         <h3>Trakeo</h3>
-                        <p>Scalable full-stack finance platform, implementing secure authentication and event-driven background
-                            processing for reliable transaction handling. Available as a functional prototype for demonstration
-                            and testing.</p>
-                        <p><br>Technologies: </p><br>
+                        <p data-i18n="projects.trakeo_desc">Scalable full-stack finance platform, implementing secure authentication and
+                            event-driven background processing for reliable transaction handling. Available as a functional prototype for
+                            demonstration and testing.</p>
+                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
                         <div class="tech">
                             <i class="fa-brands fa-js" style="vertical-align: middle; margin-right: 10px;"></i>
                             <i class="fa-brands fa-react" style="vertical-align: middle;"></i>
@@ -213,9 +230,9 @@
                                     d="M141.285 240.245c-20.082 20.082-54.406 5.86-54.406-22.545V158.82H30.597c-9.015 0-16.142-7.513-15.753-16.488.354-8.157 4.542-15.586 11.231-19.923L114.715 15.755c20.082-20.082 54.406-5.86 54.406 22.545V97.18h56.282c9.015 0 16.142 7.513 15.753 16.488-.354 8.157-4.542 15.586-11.231 19.923L141.285 240.245Z" />
                             </svg>
                         </div>
-                        <p><br>Source code: </p>
+                        <p><br><span data-i18n="projects.source_label">Source code: </span></p>
                         <a href="https://github.com/alex49ma/Trakeo"><i class="fa-solid fa-link"></i></a>
-                        <p><br>Live deployment (open testing): </p>
+                        <p><br><span data-i18n="projects.live_label">Live deployment (open testing): </span></p>
                         <a href="https://trakeo.vercel.app/"><i class="fa-solid fa-link"></i></a>
                     </div>
                     </div>
@@ -223,9 +240,9 @@
                     <img src="sources/qChess_logo.png">
                     <div class="layer">
                         <h3>Quantum Chess</h3>
-                        <p>The chess variant known as Quantum Chess. It allows the users to play embracing some of the
-                            principles of Quantum Mechanics.</p>
-                        <p><br>Technologies: </p><br>
+                        <p data-i18n="projects.qchess_desc">The chess variant known as Quantum Chess. It allows the users to play embracing some
+                            of the principles of Quantum Mechanics.</p>
+                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
                         <div class="tech"><i class="fa-brands fa-python"></i></div>
                         <a href="https://github.com/alex49ma/QuantumChess"><i class="fa-solid fa-link"></i></a>
                     </div>
@@ -234,15 +251,15 @@
                     <img src="sources/TrashBase_icon.jpeg">
                     <div class="layer">
                         <h3>Trash Base</h3>
-                        <p>A distributed system designed to manage the containers in a community. This application
-                            allows the manager to block full containers and register activity</p>
-                        <p><br>Technologies: </p><br>
+                        <p data-i18n="projects.trashbase_desc">A distributed system designed to manage the containers in a community. This
+                            application allows the manager to block full containers and register activity</p>
+                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
                         <div class="tech"><i class="fa-brands fa-java"></i></div>
                         <a href="https://github.com/alex49ma/TrashBase"><i class="fa-solid fa-link"></i></a>
                         </div>
                         </div>
                         </div>
-                        <a href="https://github.com/alex49ma/" class="btn">See more</a>
+                        <a href="https://github.com/alex49ma/" class="btn" data-i18n="projects.see_more">See more</a>
 
         </div>
 
@@ -252,7 +269,7 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="subtitle">Contact Me</h1>
+                        <h1 class="subtitle" data-i18n="contact.title">Contact Me</h1>
                         <p><i class="fa-solid fa-envelope"></i> amartinauden@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i> +420 736 420 918</p>
                         <p><i class="fa-solid fa-phone"></i> +34 643 49 97 86</p>
@@ -262,22 +279,23 @@
                             <a href="https://github.com/alex49ma"><i class="fa-brands fa-github"></i></a>
 
                         </div>
-                        <a href="sources/CV_Alejandro_M.pdf" download class="btn btn2">Download CV</a>
+                        <a href="sources/CV_Alejandro_M.pdf" download class="btn btn2" data-i18n="contact.download_cv">Download CV</a>
                     </div>
                     <div class="contact-right">
                         <form action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="217625e6-5b88-4c11-a1d4-5ea1905e6ca3">
-                            <input type="text" name="name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your email" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
+                            <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="contact.name_placeholder" required>
+                            <input type="email" name="email" placeholder="Your email" data-i18n-placeholder="contact.email_placeholder" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"
+                                data-i18n-placeholder="contact.message_placeholder"></textarea>
+                            <button type="submit" class="btn btn2" data-i18n="contact.submit">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
 
             <div class="copyright">
-                <p>Copyright <i class="fa-solid fa-copyright"></i> Alejandro Martín Auden</p>
+                <p><span data-i18n="contact.copyright">Copyright</span> <i class="fa-solid fa-copyright"></i> Alejandro Martín Auden</p>
             </div>
 
         </div>

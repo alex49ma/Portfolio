@@ -83,6 +83,25 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.lang-switcher {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.lang-switcher span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.lang-switcher span:hover {
+    color: #45dad2;
+}
+
+.lang-switcher span.active {
+    color: #00a199;
+    font-weight: 500;
+}
 .header-text{
     margin-top: 16%;
     font-size: 30px;
@@ -240,7 +259,7 @@ nav ul li a:hover::after{
 }
 
 .experience-list div:hover {
-    background: #45dad2;
+    background: #00a199;
     transform: translateY(-10px);
 }
 
@@ -278,7 +297,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #45dad2);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #00a199);
     border-radius: 10px;
     position: absolute;
     left: 0;
