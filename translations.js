@@ -15,7 +15,7 @@ const translations = {
         about: {
             title: "About Me",
             bullet1: "• I'm a Spanish software developer living in Brno",
-            bullet2: "• Enthusiastic about international environments, learning languages and experiencing cultures",
+            bullet2: "• Enthusiastic about international environments, learning languages and cultural immersions",
             bullet3: "• Curious learner: Interested in physics, AI and finance",
             bullet4: "• Studying a Master's degree in Quantum Computing",
             bullet5: "• Author of two novels and one article",

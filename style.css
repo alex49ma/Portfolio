@@ -508,4 +508,7 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+.lang-switcher span.active {
+    color: #ababab;
+}
 }
