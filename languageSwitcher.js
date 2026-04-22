@@ -10,6 +10,9 @@ const languageSwitcher = {
 
         localStorage.setItem('lang', lang);
         document.documentElement.lang = lang;
+        if (translations[lang].page_title) {
+            document.title = translations[lang].page_title;
+        }
 
         // Update active class on language switcher
         document.querySelectorAll('.lang-switcher span').forEach(el => {

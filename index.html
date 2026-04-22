@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title data-i18n="page_title"></title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bd89d1efee.js" crossorigin="anonymous"></script>
     <script src="translations.js"></script>
@@ -19,11 +19,11 @@
             <nav id="nav">
                 <!--img src="sources/logo_example.jpeg" class="logo"-->
                 <ul id="sideMenu">
-                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                    <li><a href="#about" data-i18n="nav.about">About Me</a></li>
-                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="#home" data-i18n="nav.home"></a></li>
+                    <li><a href="#about" data-i18n="nav.about"></a></li>
+                    <li><a href="#experience" data-i18n="nav.experience"></a></li>
+                    <li><a href="#projects" data-i18n="nav.projects"></a></li>
+                    <li><a href="#contact" data-i18n="nav.contact"></a></li>
                     <li>
                         <div class="lang-switcher">
                             <span onclick="languageSwitcher.setLanguage('en')">EN</span> |
@@ -36,12 +36,12 @@
             </nav>
             <div class="header-text">
                 <div class="profpic">
-                    <img src="sources/foto personal.jpg">
+                    <img src="sources/foto personal2.jpg">
                 </div>
                 <h1>
-                    <p data-i18n="header.hi">Hi, my name is</p><span>Alejandro Martín!</span>
+                    <p data-i18n="header.hi"></p><span data-i18n="header.name"></span>
                 </h1>
-                <p data-i18n="header.role">Software developer</p>
+                <p data-i18n="header.role"></p>
             </div>
         </div>
     </div>
@@ -55,48 +55,40 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle" data-i18n="about.title">About Me</h1>
-                    <p><br><span data-i18n="about.bullet1">• I'm a Spanish software developer living in Brno</span><br><br>
-                        <span data-i18n="about.bullet2">• Enthusiastic about international environments, learning languages and cultural
-                            immersions</span><br><br>
-                        <span data-i18n="about.bullet3">• Curious learner: Interested in physics, AI and finance</span><br><br>
-                        <span data-i18n="about.bullet4">• Studying a Master's degree in Quantum Computing</span><br><br>
-                        <span data-i18n="about.bullet5">• Author of two novels and one article</span><br><br>
-                        <span data-i18n="about.bullet6">• Chess enthusiast, I ran a chess workshop at a public school</span><br><br>
-                        <span data-i18n="about.bullet7">• Private lecturer in maths, physics and programming</span>
+                    <p><br><span data-i18n="about.bullet1"></span><br><br>
+                        <span data-i18n="about.bullet2"></span><br><br>
+                        <span data-i18n="about.bullet3"></span><br><br>
+                        <span data-i18n="about.bullet4"></span><br><br>
+                        <span data-i18n="about.bullet5"></span><br><br>
+                        <span data-i18n="about.bullet6"></span><br><br>
+                        <span data-i18n="about.bullet7"></span>
                     </p><br>
 
                     <div class="tab-titles">
-                        <p class="tab-links active" onclick="opentab('skills')" data-i18n="about.skills">Skills</p>
-                        <p class="tab-links" onclick="opentab('hobbies')" data-i18n="about.hobbies">Hobbies</p>
-                        <p class="tab-links" onclick="opentab('education')" data-i18n="about.education">Education</p>
-
+                        <p class="tab-links active" onclick="opentab('skills')" data-i18n="about.skills"></p>
+                        <p class="tab-links" onclick="opentab('hobbies')" data-i18n="about.hobbies"></p>
+                        <p class="tab-links" onclick="opentab('education')" data-i18n="about.education"></p>
                     </div>
 
                     <div>
                         <div class="tab-contents active" id="skills">
-                            <ul>
-                                <div class="skills">
-                                    <div class="skill-col1">
-                                        <li><span>Java</span></li>
-                                        <li>Python</li>
-                                        <li><span>SQL</span></li>
-                                        <li>C#</li>
-                                        <li><span>Bash</span></li>
-                                        <li>C++</li>
-                                        <li><span>CSS</span></li>
-                                        <li>HTML</li>
-                                    </div>
-                                    <div class="skill-col2">
-                                        <li><span>REST API</span></li>
-                                        <li>Qiskit</li>
-                                        <li><span>NoSQL</span></li>
-                                        <li>Maven</li>
-                                        <li><span>Embeded systems</span></li>
-                                        <li>MQTT</li>
-                                        <li><span>Backend</span></li>
-                                        <li>Web development</li>
-                                    </div>
-                                </div>
+                            <ul class="skills-list">
+                                <li data-i18n="about.skill_list.java"></li>
+                                <li data-i18n="about.skill_list.python"></li>
+                                <li data-i18n="about.skill_list.sql"></li>
+                                <li data-i18n="about.skill_list.csharp"></li>
+                                <li data-i18n="about.skill_list.bash"></li>
+                                <li data-i18n="about.skill_list.cpp"></li>
+                                <li data-i18n="about.skill_list.css"></li>
+                                <li data-i18n="about.skill_list.html"></li>
+                                <li data-i18n="about.skill_list.rest_api"></li>
+                                <li data-i18n="about.skill_list.qiskit"></li>
+                                <li data-i18n="about.skill_list.nosql"></li>
+                                <li data-i18n="about.skill_list.maven"></li>
+                                <li data-i18n="about.skill_list.embedded"></li>
+                                <li data-i18n="about.skill_list.mqtt"></li>
+                                <li data-i18n="about.skill_list.backend"></li>
+                                <li data-i18n="about.skill_list.web_dev"></li>
                             </ul>
                         </div>
                     </div>
@@ -104,18 +96,14 @@
                     <div>
                         <div class="tab-contents" id="hobbies">
                             <ul>
-                                <li><span data-i18n="about.hobby1_title">Chess</span><br>
-                                    <p data-i18n="about.hobby1_desc">Since I was a kid, chess
-                                        has been an important part of my life and nowadays I keep playing frequently.</p>
+                                <li><span data-i18n="about.hobby1_title"></span><br>
+                                    <p data-i18n="about.hobby1_desc"></p>
                                 </li>
-                                <li><span data-i18n="about.hobby2_title">Reading and Writting</span><br>
-                                    <p data-i18n="about.hobby2_desc">I have
-                                        always had a very active imagination, writting a lot of stories in the past. Now I try to keep some time for
-                                        that as well</p>
+                                <li><span data-i18n="about.hobby2_title"></span><br>
+                                    <p data-i18n="about.hobby2_desc"></p>
                                 </li>
-                                <li><span data-i18n="about.hobby3_title">Team sports</span><br>
-                                    <p data-i18n="about.hobby3_desc">I do not excel in any
-                                        particular sport but I have practiced many of them. Team sports are usually my favorites.</p>
+                                <li><span data-i18n="about.hobby3_title"></span><br>
+                                    <p data-i18n="about.hobby3_desc"></p>
                                 </li>
                             </ul>
                         </div>
@@ -124,23 +112,22 @@
                     <div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span data-i18n="about.edu1_title">Master's degree in Quantum Computing</span>
-                                    <p class="period" data-i18n="about.edu1_period">Present - Universidad Internacional de la Rioja</p>
+                                <li><span data-i18n="about.edu1_title"></span>
+                                    <p class="period" data-i18n="about.edu1_period"></p>
                                 <li>
-                                    <p data-i18n="about.edu1_desc">Coursework: Quantum Mechanics, Mathematics applied to Information Theory, Quantum
-                                        Algorithms</p>
+                                    <p data-i18n="about.edu1_desc"></p>
                                 </li>
                                 </li>
-                                <li><span data-i18n="about.edu2_title">Exchange program: Computer Science</span>
-                                    <p class="period" data-i18n="about.edu2_period">2022-2023 - HTWG Konstanz</p>
+                                <li><span data-i18n="about.edu2_title"></span>
+                                    <p class="period" data-i18n="about.edu2_period"></p>
                                 <li>
-                                    <p data-i18n="about.edu2_desc">Coursework: Ubiquitous Computing, Mobile Computing, Embedded Systems</p>
+                                    <p data-i18n="about.edu2_desc"></p>
                                 </li>
                                 </li>
-                                <li><span data-i18n="about.edu3_title">Bachelor's degree in Computer Engineering</span>
-                                    <p class="period" data-i18n="about.edu3_period">2019-2024 - Universidad de Sevilla</p>
+                                <li><span data-i18n="about.edu3_title"></span>
+                                    <p class="period" data-i18n="about.edu3_period"></p>
                                 <li>
-                                    <p data-i18n="about.edu3_desc">Coursework: Computer Architecture, Software Architecture, Distributed systems</p>
+                                    <p data-i18n="about.edu3_desc"></p>
                                 </li>
                                 </li>
                             </ul>
@@ -156,52 +143,34 @@
 
     <div id="experience">
         <div class="container">
-            <h1 class="subtitle" data-i18n="experience.title">My Experience</h1>
+            <h1 class="subtitle" data-i18n="experience.title"></h1>
             <div class="experience-list">
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2 data-i18n="experience.role1_title">Asociate Analyst Developer</h2>
-                    <p data-i18n="experience.role1_desc1">Full-time role as a developer in one of the market-leading FinTechs.</p>
-                    <p><br><span data-i18n="experience.role1_desc2">Analysis, implementation and maintenance of new functionalities.</span>
+                    <h2 data-i18n="experience.role1_title"></h2>
+                    <p data-i18n="experience.role1_desc1"></p>
+                    <p><br><span data-i18n="experience.role1_desc2"></span>
                     </p>
-                    <p><br><span data-i18n="experience.role1_desc3">Worked within an Agile environment, collaborating in sprints and
-                            delivering incremental results.</span></p>
-                    <p><br><span data-i18n="experience.role1_desc4">Optimized database performance, cutting generation time by up to 50% for
-                            selected reports and critical processes</span></p>
-                    <a href="https://www.fnz.com" data-i18n="experience.company_link">About this company</a>
+                    <p><br><span data-i18n="experience.role1_desc3"></span></p>
+                    <p><br><span data-i18n="experience.role1_desc4"></span></p>
+                    <a href="https://www.fnz.com" data-i18n="experience.company_link"></a>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2 data-i18n="experience.role2_title">Technology Solutions Graduate</h2>
-                    <p data-i18n="experience.role2_desc1">Part of a full immersion program in different roles. Among other responsibilities,
-                        can be highlighted:</p>
-                    <p><br><span data-i18n="experience.role2_desc2">• Diagnosed and resolved software inconsistencies, ensuring system
-                            reliability and performance.</span></p>
-                    <p><br><span data-i18n="experience.role2_desc3">• Collaborated with cross-functional teams to identify and implement
-                            solutions for system improvements.</span></p>
-                    <p><br><span data-i18n="experience.role2_desc4">• Analyzing business requirements to develop and design use cases that
-                            align with user needs and project goals.</span></p>
-                    <a href="https://www.fnz.com" data-i18n="experience.company_link">About this company</a>
+                    <h2 data-i18n="experience.role2_title"></h2>
+                    <p data-i18n="experience.role2_desc1"></p>
+                    <p><br><span data-i18n="experience.role2_desc2"></span></p>
+                    <p><br><span data-i18n="experience.role2_desc3"></span></p>
+                    <p><br><span data-i18n="experience.role2_desc4"></span></p>
+                    <a href="https://www.fnz.com" data-i18n="experience.company_link"></a>
                 </div>
-                <!--div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Software Engineer</h2>
-                    <p>Role in a leading French software company serving the travel and hospitality sector. Java backend
-                        programming, API development. Full software cycle.</p>
-                    <p><br>Collecting and addressing technical requirements, while maintaining effective communication.
-                    </p>
-                    <a href="https://www.orchestra.eu/en/">About this company</a>
-                </div-->
                 <div>
                     <i class="fa-solid fa-database"></i>
-                    <h2 data-i18n="experience.role3_title">Database and IT Assistant</h2>
-                    <p data-i18n="experience.role3_desc1">Conception and implementation of novel mechanisms to streamline the access,
-                        manipulation, and visualization of data.</p>
-                    <p><br><span data-i18n="experience.role3_desc2">Daily execution of data processing, ensuring its integrity, accuracy,
-                            and optimal functionality.</span></p>
-                    <p><br><span data-i18n="experience.role3_desc3">Automatization of daily repetitive tasks, saving up to 1h of work every
-                            day.</span></p>
-                    <a href="https://www.ayesa.com/" data-i18n="experience.company_link">About this company</a>
+                    <h2 data-i18n="experience.role3_title"></h2>
+                    <p data-i18n="experience.role3_desc1"></p>
+                    <p><br><span data-i18n="experience.role3_desc2"></span></p>
+                    <p><br><span data-i18n="experience.role3_desc3"></span></p>
+                    <a href="https://www.ayesa.com/" data-i18n="experience.company_link"></a>
                 </div>
             </div>
         </div>
@@ -211,55 +180,59 @@
 
     <div id="projects">
         <div class="container">
-            <h1 class="subtitle" data-i18n="projects.title">My Projects</h1>
+            <h1 class="subtitle" data-i18n="projects.title"></h1>
             <div class="work-list">
                 <div class="work">
                     <img src="sources/logo.png">
                     <div class="layer">
-                        <h3>Trakeo</h3>
-                        <p data-i18n="projects.trakeo_desc">Scalable full-stack finance platform, implementing secure authentication and
-                            event-driven background processing for reliable transaction handling. Available as a functional prototype for
-                            demonstration and testing.</p>
-                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
+                        <h3 data-i18n="projects.trakeo_title"></h3>
+                        <p data-i18n="projects.trakeo_desc"></p>
+                        <p><br><span data-i18n="projects.tech_label"></span></p><br>
                         <div class="tech">
                             <i class="fa-brands fa-js" style="vertical-align: middle; margin-right: 10px;"></i>
                             <i class="fa-brands fa-react" style="vertical-align: middle;"></i>
-                            <svg viewBox="0 0 256 256" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                style="vertical-align: middle; margin-right: 10px;">
+                            <svg viewBox="0 0 256 256" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" style="vertical-align: middle; margin-right: 10px;">
                                 <path
                                     d="M141.285 240.245c-20.082 20.082-54.406 5.86-54.406-22.545V158.82H30.597c-9.015 0-16.142-7.513-15.753-16.488.354-8.157 4.542-15.586 11.231-19.923L114.715 15.755c20.082-20.082 54.406-5.86 54.406 22.545V97.18h56.282c9.015 0 16.142 7.513 15.753 16.488-.354 8.157-4.542 15.586-11.231 19.923L141.285 240.245Z" />
                             </svg>
                         </div>
-                        <p><br><span data-i18n="projects.source_label">Source code: </span></p>
-                        <a href="https://github.com/alex49ma/Trakeo"><i class="fa-solid fa-link"></i></a>
-                        <p><br><span data-i18n="projects.live_label">Live deployment (open testing): </span></p>
-                        <a href="https://trakeo.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                        <div class="project-links">
+                            <div>
+                                <p><span data-i18n="projects.source_label"></span></p>
+                                <a href="https://github.com/alex49ma/Trakeo"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                            <div>
+                                <p><span data-i18n="projects.live_label"></span></p>
+                                <a href="https://trakeo.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    <div class="work">
+                </div>
+                <div class="work">
                     <img src="sources/qChess_logo.png">
                     <div class="layer">
-                        <h3>Quantum Chess</h3>
-                        <p data-i18n="projects.qchess_desc">The chess variant known as Quantum Chess. It allows the users to play embracing some
-                            of the principles of Quantum Mechanics.</p>
-                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
+                        <h3 data-i18n="projects.qchess_title"></h3>
+                        <p data-i18n="projects.qchess_desc"></p>
+                        <p><br><span data-i18n="projects.tech_label"></span></p><br>
                         <div class="tech"><i class="fa-brands fa-python"></i></div>
+                        <p><span data-i18n="projects.source_label"></span></p>
                         <a href="https://github.com/alex49ma/QuantumChess"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="sources/TrashBase_icon.jpeg">
                     <div class="layer">
-                        <h3>Trash Base</h3>
-                        <p data-i18n="projects.trashbase_desc">A distributed system designed to manage the containers in a community. This
-                            application allows the manager to block full containers and register activity</p>
-                        <p><br><span data-i18n="projects.tech_label">Technologies: </span></p><br>
+                        <h3 data-i18n="projects.trashbase_title"></h3>
+                        <p data-i18n="projects.trashbase_desc"></p>
+                        <p><br><span data-i18n="projects.tech_label"></span></p><br>
                         <div class="tech"><i class="fa-brands fa-java"></i></div>
+                        <p><span data-i18n="projects.source_label"></span></p>
                         <a href="https://github.com/alex49ma/TrashBase"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                        </div>
-                        </div>
-                        <a href="https://github.com/alex49ma/" class="btn" data-i18n="projects.see_more">See more</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/alex49ma/" class="btn" data-i18n="projects.see_more"></a>
 
         </div>
 
@@ -269,33 +242,37 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="subtitle" data-i18n="contact.title">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i> amartinauden@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i> +420 736 420 918</p>
-                        <p><i class="fa-solid fa-phone"></i> +34 643 49 97 86</p>
+                        <h1 class="subtitle" data-i18n="contact.title"></h1>
+                        <p><i class="fa-solid fa-envelope"></i> <span data-i18n="contact.email"></span></p>
+                        <p><i class="fa-solid fa-phone"></i> <span data-i18n="contact.phone_cz"></span></p>
+                        <p><i class="fa-solid fa-phone"></i> <span data-i18n="contact.phone_es"></span></p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/alejandro-martin-auden-50384219b/"><i
                                     class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/alex49ma"><i class="fa-brands fa-github"></i></a>
 
                         </div>
-                        <a href="sources/CV_Alejandro_M.pdf" download class="btn btn2" data-i18n="contact.download_cv">Download CV</a>
+                        <a href="sources/CV_Alejandro_M.pdf" download class="btn btn2"
+                            data-i18n="contact.download_cv"></a>
                     </div>
                     <div class="contact-right">
                         <form action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="217625e6-5b88-4c11-a1d4-5ea1905e6ca3">
-                            <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="contact.name_placeholder" required>
-                            <input type="email" name="email" placeholder="Your email" data-i18n-placeholder="contact.email_placeholder" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"
+                            <input type="text" name="name" placeholder=""
+                                data-i18n-placeholder="contact.name_placeholder" required>
+                            <input type="email" name="email" placeholder=""
+                                data-i18n-placeholder="contact.email_placeholder" required>
+                            <textarea name="message" rows="6" placeholder=""
                                 data-i18n-placeholder="contact.message_placeholder"></textarea>
-                            <button type="submit" class="btn btn2" data-i18n="contact.submit">Submit</button>
+                            <button type="submit" class="btn btn2" data-i18n="contact.submit"></button>
                         </form>
                     </div>
                 </div>
             </div>
 
             <div class="copyright">
-                <p><span data-i18n="contact.copyright">Copyright</span> <i class="fa-solid fa-copyright"></i> Alejandro Martín Auden</p>
+                <p><span data-i18n="contact.copyright"></span> <i class="fa-solid fa-copyright"></i> <span
+                        data-i18n="contact.copyright_name"></span></p>
             </div>
 
         </div>

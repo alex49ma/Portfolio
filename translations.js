@@ -1,5 +1,6 @@
 const translations = {
     en: {
+        page_title: "Alejandro Martín - Portfolio",
         nav: {
             home: "Home",
             about: "About Me",
@@ -24,6 +25,24 @@ const translations = {
             skills: "Skills",
             hobbies: "Hobbies",
             education: "Education",
+            skill_list: {
+                java: "Java",
+                python: "Python",
+                sql: "SQL",
+                csharp: "C#",
+                bash: "Bash",
+                cpp: "C++",
+                css: "CSS",
+                html: "HTML",
+                rest_api: "REST API",
+                qiskit: "Qiskit",
+                nosql: "NoSQL",
+                maven: "Maven",
+                embedded: "Embedded systems",
+                mqtt: "MQTT",
+                backend: "Backend",
+                web_dev: "Web development"
+            },
             hobby1_title: "Chess",
             hobby1_desc: "Since I was a kid, chess has been an important part of my life and nowadays I keep playing frequently.",
             hobby2_title: "Reading and Writing",
@@ -60,10 +79,13 @@ const translations = {
         },
         projects: {
             title: "My Projects",
+            trakeo_title: "Trakeo",
+            qchess_title: "Quantum Chess",
+            trashbase_title: "Trash Base",
             trakeo_desc: "Scalable full-stack finance platform, implementing secure authentication and event-driven background processing for reliable transaction handling. Available as a functional prototype for demonstration and testing.",
             tech_label: "Technologies: ",
             source_label: "Source code: ",
-            live_label: "Live deployment (open testing): ",
+            live_label: "Open testing: ",
             qchess_desc: "The chess variant known as Quantum Chess. It allows the users to play embracing some of the principles of Quantum Mechanics.",
             trashbase_desc: "A distributed system designed to manage the containers in a community. This application allows the manager to block full containers and register activity",
             see_more: "See more"
@@ -75,10 +97,15 @@ const translations = {
             email_placeholder: "Your email",
             message_placeholder: "Your Message",
             submit: "Submit",
-            copyright: "Copyright"
+            email: "amartinauden@gmail.com",
+            phone_cz: "+420 736 420 918",
+            phone_es: "+34 643 49 97 86",
+            copyright: "Copyright",
+            copyright_name: "Alejandro Martín Auden"
         }
     },
     es: {
+        page_title: "Alejandro Martín - Portfolio",
         nav: {
             home: "Inicio",
             about: "Sobre mí",
@@ -103,6 +130,24 @@ const translations = {
             skills: "Habilidades",
             hobbies: "Aficiones",
             education: "Educación",
+            skill_list: {
+                java: "Java",
+                python: "Python",
+                sql: "SQL",
+                csharp: "C#",
+                bash: "Bash",
+                cpp: "C++",
+                css: "CSS",
+                html: "HTML",
+                rest_api: "REST API",
+                qiskit: "Qiskit",
+                nosql: "NoSQL",
+                maven: "Maven",
+                embedded: "Sistemas embebidos",
+                mqtt: "MQTT",
+                backend: "Backend",
+                web_dev: "Desarrollo web"
+            },
             hobby1_title: "Ajedrez",
             hobby1_desc: "Desde que era niño, el ajedrez ha sido una parte importante de mi vida y hoy en día sigo jugando con frecuencia.",
             hobby2_title: "Escribir y Leer",
@@ -139,10 +184,13 @@ const translations = {
         },
         projects: {
             title: "Mis Proyectos",
+            trakeo_title: "Trakeo",
+            qchess_title: "Quantum Chess",
+            trashbase_title: "Trash Base",
             trakeo_desc: "Plataforma financiera full-stack escalable, implementando autenticación segura y procesamiento en segundo plano basado en eventos para un manejo fiable de transacciones. Disponible como prototipo funcional para demostración y pruebas.",
             tech_label: "Tecnologías: ",
             source_label: "Código fuente: ",
-            live_label: "Despliegue (pruebas abiertas): ",
+            live_label: "Open testing: ",
             qchess_desc: "La variante de ajedrez conocida como Ajedrez Cuántico. Permite a los usuarios jugar adoptando algunos de los principios de la Mecánica Cuántica.",
             trashbase_desc: "Un sistema distribuido diseñado para gestionar los contenedores en una comunidad. Esta aplicación permite al gestor bloquear contenedores llenos y registrar la actividad.",
             see_more: "Ver más"
@@ -154,7 +202,11 @@ const translations = {
             email_placeholder: "Tu email",
             message_placeholder: "Tu Mensaje",
             submit: "Enviar",
-            copyright: "Copyright"
+            email: "amartinauden@gmail.com",
+            phone_cz: "+420 736 420 918",
+            phone_es: "+34 643 49 97 86",
+            copyright: "Copyright",
+            copyright_name: "Alejandro Martín Auden"
         }
     }
 };
