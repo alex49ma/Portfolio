@@ -77,6 +77,10 @@ const translations = {
             role3_desc2: "Daily execution of data processing, ensuring its integrity, accuracy, and optimal functionality.",
             role3_desc3: "Automatization of daily repetitive tasks, saving up to 1h of work every day."
         },
+        new_section: {
+            title: "Header",
+            paragraph: "Paragraph"
+        },
         projects: {
             title: "My Projects",
             trakeo_title: "Trakeo",
@@ -181,6 +185,10 @@ const translations = {
             role3_desc1: "Concepción e implementación de mecanismos novedosos para agilizar el acceso, manipulación y visualización de datos.",
             role3_desc2: "Ejecución diaria del procesamiento de datos, asegurando su integridad, precisión y funcionalidad óptima.",
             role3_desc3: "Automatización de tareas repetitivas diarias, ahorrando hasta 1h de trabajo cada día."
+        },
+        new_section: {
+            title: "Header",
+            paragraph: "Paragraph"
         },
         projects: {
             title: "Mis Proyectos",
