@@ -78,8 +78,9 @@ const translations = {
             role3_desc3: "Automatization of daily repetitive tasks, saving up to 1h of work every day."
         },
         new_section: {
-            title: "Header",
-            paragraph: "Paragraph"
+            intro: "Check this",
+            title: "Work in progress",
+            paragraph: "I am currently developing a new Quantum Machine learning model for quantum chess in collaboration with Quantum Realm Games LLC."
         },
         projects: {
             title: "My Projects",
@@ -187,8 +188,9 @@ const translations = {
             role3_desc3: "Automatización de tareas repetitivas diarias, ahorrando hasta 1h de trabajo cada día."
         },
         new_section: {
-            title: "Header",
-            paragraph: "Paragraph"
+            intro: "Echale un ojo a este",
+            title: "Trabajo en progreso",
+            paragraph: "Actualmente me encuentro desarrollando un nuevo modelo de Quantum Machine Learning para quantum chess en colaboración con Quantum Realm Games LLC."
         },
         projects: {
             title: "Mis Proyectos",

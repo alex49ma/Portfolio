@@ -350,6 +350,81 @@ nav ul li a:hover::after{
     z-index: 1;
 }
 
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.carousel {
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.carousel-track img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0;
+    animation: swipeRight 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-track img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-track img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.carousel-track img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes swipeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-10deg) scale(0.8);
+        filter: blur(10px);
+    }
+
+    5%,
+    30% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg) scale(1);
+        filter: blur(0px);
+    }
+
+    35%,
+    100% {
+        opacity: 0;
+        transform: translateX(100%) rotate(10deg) scale(0.8);
+        filter: blur(10px);
+    }
+}
 .glass-card:hover {
     transform: translateY(-10px);
     border-color: rgba(69, 218, 210, 0.5);
@@ -622,5 +697,14 @@ nav .fa-solid{
     }
 .lang-switcher span.active {
     color: #ababab;
+}
+.blob-1 {
+    width: 200px;
+    height: 200px;
+}
+
+.blob-2 {
+    width: 250px;
+    height: 250px;
 }
 }
