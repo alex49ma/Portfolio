@@ -11,7 +11,7 @@ const translations = {
         header: {
             hi: "Hi, my name is",
             name: "Alejandro Martín!",
-            role: "Software developer"
+            role: "Software engineer - Quantum Developer"
         },
         about: {
             title: "About Me",
@@ -70,17 +70,16 @@ const translations = {
         },
         experience: {
             title: "My Experience",
-            role1_title: "Asociate Analyst Developer",
-            role1_desc1: "Full-time role as a developer in one of the market-leading FinTechs.",
-            role1_desc2: "Analysis, implementation and maintenance of new functionalities.",
-            role1_desc3: "Worked within an Agile environment, collaborating in sprints and delivering incremental results.",
-            role1_desc4: "Optimized database performance, cutting generation time by up to 50% for selected reports and critical processes",
+            role1_title: "Quantum Computing Intern",
+            role1_desc1: "Development of Quantum Machine Learning models.",
+            role1_desc2: "Analysis and implementation of metrics to evaluate quantum chess games.",
+            role1_desc3: "Analysis of quantum chess game data to identify patterns and tactics in the game.",
+            role2_title: "Analyst Developer",
+            role2_desc1: "Analysis, implementation and maintenance of new functionalities in an Agile FinTech environment.",
+            role2_desc2: "Diagnosed software inconsistencies and optimized database performance, cutting report generation time by up to 50%.",
+            role2_desc3: "Collaborated with cross-functional teams to identify system improvements and design business use cases.",
+            role2_desc4: "Progressed from a graduate immersion program to a full-time role delivering incremental results.",
             company_link: "About this company",
-            role2_title: "Technology Solutions Graduate",
-            role2_desc1: "Part of a full immersion program in different roles. Among other responsibilities, can be highlighted:",
-            role2_desc2: "• Diagnosed and resolved software inconsistencies, ensuring system reliability and performance.",
-            role2_desc3: "• Collaborated with cross-functional teams to identify and implement solutions for system improvements.",
-            role2_desc4: "• Analyzing business requirements to develop and design use cases that align with user needs and project goals.",
             role3_title: "Database and IT Assistant",
             role3_desc1: "Conception and implementation of novel mechanisms to streamline the access, manipulation, and visualization of data.",
             role3_desc2: "Daily execution of data processing, ensuring its integrity, accuracy, and optimal functionality.",
@@ -90,13 +89,13 @@ const translations = {
             title: "My Projects",
             trakeo_title: "Trakeo",
             qchess_title: "Quantum Chess",
-            trashbase_title: "Trash Base",
+            QML_title: "QML for game heuristics",
             trakeo_desc: "Scalable full-stack finance platform, implementing secure authentication and event-driven background processing for reliable transaction handling. Available as a functional prototype for demonstration and testing.",
             tech_label: "Technologies: ",
             source_label: "Source code: ",
             live_label: "Open testing: ",
             qchess_desc: "The chess variant known as Quantum Chess. It allows the users to play embracing some of the principles of Quantum Mechanics.",
-            trashbase_desc: "A distributed system designed to manage the containers in a community. This application allows the manager to block full containers and register activity",
+            QML_desc: "A collaborative project with Quantum Realm Games to develop a hybrid quantum-classical AI model for evaluating Quantum Chess positions and heuristics.",
             see_more: "See more"
         },
         contact: {
@@ -125,7 +124,7 @@ const translations = {
         header: {
             hi: "Hola, me llamo",
             name: "Alejandro Martín!",
-            role: "Desarrollador de software"
+            role: "Ingeniero de software - Desarrollador Quantum"
         },
         about: {
             title: "Sobre mí",
@@ -184,17 +183,16 @@ const translations = {
         },
         experience: {
             title: "Mi Experiencia",
-            role1_title: "Desarrollador Analista Asociado",
-            role1_desc1: "Rol a tiempo completo como desarrollador en una de las FinTech líderes del mercado.",
-            role1_desc2: "Análisis, implementación y mantenimiento de nuevas funcionalidades.",
-            role1_desc3: "Trabajo en un entorno Agile, colaborando en sprints y entregando resultados incrementales.",
-            role1_desc4: "Optimización del rendimiento de la base de datos, reduciendo el tiempo de generación hasta un 50% para informes y procesos críticos",
+            role1_title: "Quantum Computing Intern",
+            role1_desc1: "Desarrollo de modelos de aprendizaje automático cuántico.",
+            role1_desc2: "Análisis e implementación de métricas para evaluar partidas de ajedrez cuántico.",
+            role1_desc3: "Análisis de datos de partidas de ajedrez cuántico para identificar patrones y tácticas en el juego.",
+            role2_title: "Analista Desarrollador",
+            role2_desc1: "Análisis, implementación y mantenimiento de nuevas funcionalidades en un entorno FinTech Agile.",
+            role2_desc2: "Diagnóstico de inconsistencias de software y optimización del rendimiento de base de datos, reduciendo tiempos en hasta un 50%.",
+            role2_desc3: "Colaboración con equipos transversales para identificar mejoras del sistema y diseñar casos de uso.",
+            role2_desc4: "Progresión desde un programa de inmersión para graduados a un rol a tiempo completo entregando resultados.",
             company_link: "Sobre esta empresa",
-            role2_title: "Graduado en Soluciones Tecnológicas",
-            role2_desc1: "Parte de un programa de inmersión total en diferentes roles. Entre otras responsabilidades, destacan:",
-            role2_desc2: "• Diagnóstico y resolución de inconsistencias de software, asegurando la fiabilidad y el rendimiento del sistema.",
-            role2_desc3: "• Colaboración con equipos transversales para identificar e implementar soluciones de mejora del sistema.",
-            role2_desc4: "• Análisis de requisitos de negocio para desarrollar y diseñar casos de uso alineados con las necesidades de los usuarios y los objetivos del proyecto.",
             role3_title: "Asistente de Base de Datos y TI",
             role3_desc1: "Concepción e implementación de mecanismos novedosos para agilizar el acceso, manipulación y visualización de datos.",
             role3_desc2: "Ejecución diaria del procesamiento de datos, asegurando su integridad, precisión y funcionalidad óptima.",
@@ -204,13 +202,13 @@ const translations = {
             title: "Mis Proyectos",
             trakeo_title: "Trakeo",
             qchess_title: "Quantum Chess",
-            trashbase_title: "Trash Base",
+            QML_title: "QML for game heuristics",
             trakeo_desc: "Plataforma financiera full-stack escalable, implementando autenticación segura y procesamiento en segundo plano basado en eventos para un manejo fiable de transacciones. Disponible como prototipo funcional para demostración y pruebas.",
             tech_label: "Tecnologías: ",
             source_label: "Código fuente: ",
             live_label: "Open testing: ",
             qchess_desc: "La variante de ajedrez conocida como Ajedrez Cuántico. Permite a los usuarios jugar adoptando algunos de los principios de la Mecánica Cuántica.",
-            trashbase_desc: "Un sistema distribuido diseñado para gestionar los contenedores en una comunidad. Esta aplicación permite al gestor bloquear contenedores llenos y registrar la actividad.",
+            QML_desc: "Un proyecto de colaboración con Quantum Realm Games para desarrollar un modelo híbrido clásico-cuántico para la evaluación de posiciones y heurísticas del Ajedrez Cuántico.",
             see_more: "Ver más"
         },
         contact: {
