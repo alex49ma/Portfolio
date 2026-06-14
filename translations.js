@@ -183,7 +183,7 @@ const translations = {
         },
         experience: {
             title: "Mi Experiencia",
-            role1_title: "Quantum Computing Intern",
+            role1_title: "Prácticas en Computación Cuántica",
             role1_desc1: "Desarrollo de modelos de aprendizaje automático cuántico.",
             role1_desc2: "Análisis e implementación de métricas para evaluar partidas de ajedrez cuántico.",
             role1_desc3: "Análisis de datos de partidas de ajedrez cuántico para identificar patrones y tácticas en el juego.",
@@ -201,8 +201,8 @@ const translations = {
         projects: {
             title: "Mis Proyectos",
             trakeo_title: "Trakeo",
-            qchess_title: "Quantum Chess",
-            QML_title: "QML for game heuristics",
+            qchess_title: "Ajedrez Cuántico",
+            QML_title: "QML para heurísticas de juego",
             trakeo_desc: "Plataforma financiera full-stack escalable, implementando autenticación segura y procesamiento en segundo plano basado en eventos para un manejo fiable de transacciones. Disponible como prototipo funcional para demostración y pruebas.",
             tech_label: "Tecnologías: ",
             source_label: "Código fuente: ",
