@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page_title"></title>
+    <meta name="description" content="" data-i18n-content="meta_description">
+    <meta name="keywords" content="" data-i18n-content="meta_keywords">
+    <meta name="author" content="Alejandro Martín Auden">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="" data-i18n-content="page_title">
+    <meta property="og:description" content="" data-i18n-content="meta_description">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bd89d1efee.js" crossorigin="anonymous"></script>
     <script src="translations.js"></script>
@@ -42,6 +48,7 @@
                     <p data-i18n="header.hi"></p><span data-i18n="header.name"></span>
                 </h1>
                 <p data-i18n="header.role"></p>
+                <p class="header-tagline" data-i18n="header.tagline"></p>
             </div>
         </div>
     </div>
@@ -59,99 +66,122 @@
                         <span data-i18n="about.bullet2"></span><br><br>
                         <span data-i18n="about.bullet3"></span><br><br>
                         <span data-i18n="about.bullet4"></span><br><br>
-                        <span data-i18n="about.bullet5"></span><br><br>
-                        <span data-i18n="about.bullet6"></span><br><br>
-                        <span data-i18n="about.bullet7"></span>
-                    </p><br>
+                        <span data-i18n="about.bullet5"></span>
+                    </p>
+                </div>
+            </div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active" onclick="opentab('skills')" data-i18n="about.skills"></p>
-                        <p class="tab-links" onclick="opentab('hobbies')" data-i18n="about.hobbies"></p>
-                        <p class="tab-links" onclick="opentab('education')" data-i18n="about.education"></p>
+            <div class="about-tabs">
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="opentab('skills')" data-i18n="about.skills"></p>
+                    <p class="tab-links" onclick="opentab('research')" data-i18n="about.research"></p>
+                    <p class="tab-links" onclick="opentab('education')" data-i18n="about.education"></p>
+                    <p class="tab-links" onclick="opentab('hobbies')" data-i18n="about.hobbies"></p>
+                </div>
+
+                <div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span data-i18n="about.quantum_comp"></span>
+                                <ul class="skills-list">
+                                    <li data-i18n="about.skill_list.qiskit"></li>
+                                    <li data-i18n="about.skill_list.PennyLane"></li>
+                                    <li data-i18n="about.skill_list.qml"></li>
+                                    <li data-i18n="about.skill_list.hybrid"></li>
+                                    <li data-i18n="about.skill_list.q_algorithms"></li>
+                                    <li data-i18n="about.skill_list.q_info"></li>
+                                </ul>
+                            </li>
+                            <li><span data-i18n="about.software_eng"></span>
+                                <ul class="skills-list">
+                                    <li data-i18n="about.skill_list.python"></li>
+                                    <li data-i18n="about.skill_list.csharp"></li>
+                                    <li data-i18n="about.skill_list.java"></li>
+                                    <li data-i18n="about.skill_list.javascript"></li>
+                                    <li data-i18n="about.skill_list.typescript"></li>
+                                    <li data-i18n="about.skill_list.sql"></li>
+                                    <li data-i18n="about.skill_list.nosql"></li>
+                                    <li data-i18n="about.skill_list.cicd"></li>
+                                    <li data-i18n="about.skill_list.git"></li>
+                                </ul>
+                            </li>
+                            <li><span data-i18n="about.research_tools"></span>
+                                <ul class="skills-list">
+                                    <li data-i18n="about.skill_list.math"></li>
+                                    <li data-i18n="about.skill_list.numerical"></li>
+                                    <li data-i18n="about.skill_list.benchmarking"></li>
+                                    <li data-i18n="about.skill_list.latex"></li>
+                                    <li data-i18n="about.skill_list.rest_api"></li>
+                                    <li data-i18n="about.skill_list.web_dev"></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div>
-                        <div class="tab-contents active" id="skills">
-                            <ul>
-                                <li><span data-i18n="about.software_eng"></span>
-                                    <ul class="skills-list">
-                                        <li data-i18n="about.skill_list.csharp"></li>
-                                        <li data-i18n="about.skill_list.python"></li>
-                                        <li data-i18n="about.skill_list.java"></li>
-                                        <li data-i18n="about.skill_list.javascript"></li>
-                                        <li data-i18n="about.skill_list.cpp"></li>
-                                        <li data-i18n="about.skill_list.typescript"></li>
-                                        <li data-i18n="about.skill_list.sql"></li>
-                                        <li data-i18n="about.skill_list.nosql"></li>
-                                        <li data-i18n="about.skill_list.cicd"></li>
-                                        <li data-i18n="about.skill_list.git"></li>
-                                    </ul>
-                                </li>
-                                <li><span data-i18n="about.quantum_comp"></span>
-                                    <ul class="skills-list">
-                                        <li data-i18n="about.skill_list.qiskit"></li>
-                                        <li data-i18n="about.skill_list.PennyLane"></li>
-                                        <li data-i18n="about.skill_list.qml"></li>
-                                        <li data-i18n="about.skill_list.q_algorithms"></li>
-                                        <li data-i18n="about.skill_list.q_error_correction"></li>
-                                    </ul>
-                                </li>
-                                <li><span data-i18n="about.research_tools"></span>
-                                    <ul class="skills-list">
-                                        <li data-i18n="about.skill_list.latex"></li>
-                                        <li data-i18n="about.skill_list.data_viz"></li>
-                                        <li data-i18n="about.skill_list.math"></li>
-                                        <li data-i18n="about.skill_list.rest_api"></li>
-                                        <li data-i18n="about.skill_list.bash"></li>
-                                        <li data-i18n="about.skill_list.mqtt"></li>
-                                        <li data-i18n="about.skill_list.web_dev"></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                <div>
+                    <div class="tab-contents" id="research">
+                        <ul>
+                            <li><span data-i18n="research.interests_title"></span>
+                                <ul class="research-list">
+                                    <li data-i18n="research.interest1"></li>
+                                    <li data-i18n="research.interest2"></li>
+                                    <li data-i18n="research.interest3"></li>
+                                    <li data-i18n="research.interest4"></li>
+                                </ul>
+                            </li>
+                            <li><span data-i18n="research.schools_title"></span>
+                                <ul class="research-list">
+                                    <li><strong data-i18n="research.school1_title"></strong>
+                                        <span class="period" data-i18n="research.school1_period"></span><br>
+                                        <span data-i18n="research.school1_desc"></span></li>
+                                    <li><strong data-i18n="research.school2_title"></strong>
+                                        <span class="period" data-i18n="research.school2_period"></span><br>
+                                        <span data-i18n="research.school2_desc"></span></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div>
-                        <div class="tab-contents" id="hobbies">
-                            <ul>
-                                <li><span data-i18n="about.hobby1_title"></span><br>
-                                    <p data-i18n="about.hobby1_desc"></p>
-                                </li>
-                                <li><span data-i18n="about.hobby2_title"></span><br>
-                                    <p data-i18n="about.hobby2_desc"></p>
-                                </li>
-                                <li><span data-i18n="about.hobby3_title"></span><br>
-                                    <p data-i18n="about.hobby3_desc"></p>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span data-i18n="about.hobby1_title"></span><br>
+                                <p data-i18n="about.hobby1_desc"></p>
+                            </li>
+                            <li><span data-i18n="about.hobby2_title"></span><br>
+                                <p data-i18n="about.hobby2_desc"></p>
+                            </li>
+                            <li><span data-i18n="about.hobby3_title"></span><br>
+                                <p data-i18n="about.hobby3_desc"></p>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span data-i18n="about.edu1_title"></span>
-                                    <p class="period" data-i18n="about.edu1_period"></p>
-                                <li>
-                                    <p data-i18n="about.edu1_desc"></p>
-                                </li>
-                                </li>
-                                <li><span data-i18n="about.edu2_title"></span>
-                                    <p class="period" data-i18n="about.edu2_period"></p>
-                                <li>
-                                    <p data-i18n="about.edu2_desc"></p>
-                                </li>
-                                </li>
-                                <li><span data-i18n="about.edu3_title"></span>
-                                    <p class="period" data-i18n="about.edu3_period"></p>
-                                <li>
-                                    <p data-i18n="about.edu3_desc"></p>
-                                </li>
-                                </li>
-                            </ul>
-                        </div>
+                <div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span data-i18n="about.edu1_title"></span>
+                                <p class="period" data-i18n="about.edu1_period"></p>
+                            <li>
+                                <p data-i18n="about.edu1_desc"></p>
+                            </li>
+                            </li>
+                            <li><span data-i18n="about.edu2_title"></span>
+                                <p class="period" data-i18n="about.edu2_period"></p>
+                            <li>
+                                <p data-i18n="about.edu2_desc"></p>
+                            </li>
+                            </li>
+                            <li><span data-i18n="about.edu3_title"></span>
+                                <p class="period" data-i18n="about.edu3_period"></p>
+                            <li>
+                                <p data-i18n="about.edu3_desc"></p>
+                            </li>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -177,7 +207,6 @@
                     <p data-i18n="experience.role2_desc1"></p>
                     <p><br><span data-i18n="experience.role2_desc2"></span></p>
                     <p><br><span data-i18n="experience.role2_desc3"></span></p>
-                    <p><br><span data-i18n="experience.role2_desc4"></span></p>
                     <a href="https://www.fnz.com" data-i18n="experience.company_link"></a>
                 </div>
                 <div>
