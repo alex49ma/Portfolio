@@ -43,7 +43,7 @@ const languageSwitcher = {
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
             const keys = element.getAttribute('data-i18n-placeholder').split('.');
             let value = translations[lang];
-            
+
             for (const key of keys) {
                 if (value[key] === undefined) {
                     value = null;
@@ -51,9 +51,27 @@ const languageSwitcher = {
                 }
                 value = value[key];
             }
-            
+
             if (value) {
                 element.placeholder = value;
+            }
+        });
+
+        // Meta tags (description, keywords, Open Graph)
+        document.querySelectorAll('[data-i18n-content]').forEach(element => {
+            const keys = element.getAttribute('data-i18n-content').split('.');
+            let value = translations[lang];
+
+            for (const key of keys) {
+                if (value[key] === undefined) {
+                    value = null;
+                    break;
+                }
+                value = value[key];
+            }
+
+            if (value) {
+                element.setAttribute('content', value);
             }
         });
     }
